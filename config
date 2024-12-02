@@ -1,0 +1,6 @@
+DATABASE_URI=postgresql://postgres:postgres@postgres:5432/db
+
+
+
+INTERACTION_MANAGEMENT_ENDPOINT="localhost:1232"
+SPACE_MANAGEMENT_ENDPOINT="localhost:1234"

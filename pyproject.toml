@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "code"
+version = "0.1.0"
+description = ""
+authors = ["zz"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+alembic = "^1.14.0"
+sqlalchemy = "^2.0.36"
+pydantic-settings = "^2.6.1"
+grpcio = "^1.68.0"
+psycopg2 = "^2.9.10"
+grpcio-health-checking = "^1.68.0"
+grpcio-reflection = "^1.68.0"
+grpc-interceptor = "^0.15.4"
+motiong-io-motiongapis-grpc-python = "^1.68.0.1.20241125083421+dcdc5129e927"
+motionggrpcutils = {git = "ssh://git@github.com/motiong-io/python-grpc-utils.git"}
+motiongpythonlogging = {git = "git@github.com:motiong-io/python-logging.git"}
+aiwrappifymodels = {git = "ssh://git@github.com/motiong-io/aiwrappify-pydantic-models.git"}
+
+[[tool.poetry.source]]
+name = "buf"
+url = "https://buf.build/gen/python"
+priority = "supplemental"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+black = "^24.10.0"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
